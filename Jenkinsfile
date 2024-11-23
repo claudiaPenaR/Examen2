@@ -13,7 +13,7 @@ pipeline {
         stage('Test Results') {
             steps {
                 // Asegúrate de que esta ruta apunte a la ubicación de tus archivos de reporte
-                junit '**/target/surefire-reports/*.xml'  // Ruta ajustada
+                junit '**/target/test-classes/*.xml'  // Ruta ajustada
             }
         }
     }
