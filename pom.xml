@@ -1,0 +1,104 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.platinum</groupId>
+  <artifactId>CtaCorriente</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <dependencies>
+    <!-- Dependencia de MySQL -->
+    <dependency>
+        <groupId>mysql</groupId>
+        <artifactId>mysql-connector-java</artifactId>
+        <version>8.0.30</version> <!-- Reemplaza con la última versión si es necesario -->
+    </dependency>
+     <!-- Dependencia para Servlets -->
+    <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>4.0.1</version>
+        <scope>provided</scope>
+    </dependency>
+    <dependency>
+        <groupId>javax.persistence</groupId>
+        <artifactId>javax.persistence-api</artifactId>
+        <version>2.2</version>
+    </dependency>
+     <!-- Dependencia de JUnit 5 -->
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-api</artifactId>
+        <version>5.7.2</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>org.junit.jupiter</groupId>
+        <artifactId>junit-jupiter-engine</artifactId>
+        <version>5.7.2</version>
+        <scope>test</scope>
+    </dependency>
+    
+    <!-- Dependencia de Cucumber -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-java</artifactId>
+        <version>7.10.0</version>
+        <scope>test</scope>
+    </dependency>
+
+    <!-- Dependencia de Cucumber para Selenium -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-spring</artifactId>
+        <version>7.10.0</version>
+        <scope>test</scope>
+    </dependency>
+	<!-- Dependencia para Cucumber con JUnit -->
+    <dependency>
+        <groupId>io.cucumber</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>7.0.0</version>
+        <scope>test</scope>
+    </dependency>
+    <!-- Dependencia de Selenium -->
+    <dependency>
+        <groupId>org.seleniumhq.selenium</groupId>
+        <artifactId>selenium-java</artifactId>
+        <version>4.7.2</version>
+        <scope>test</scope>
+    </dependency>
+   
+    <!-- Dependencia de Spring Beans -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-beans</artifactId>
+        <version>5.3.22</version> <!-- Ajusta la versión según la que uses -->
+    </dependency>
+	<!-- Dependencia de Spring Framework -->
+    <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-context</artifactId>
+        <version>5.3.23</version> <!-- Usa la versión que sea apropiada para tu proyecto -->
+    </dependency>
+    
+	<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-context</artifactId>
+    <version>5.3.20</version> <!-- Usa la versión que estés utilizando en tu proyecto -->
+</dependency>
+
+<dependency>
+    <groupId>org.springframework</groupId>
+    <artifactId>spring-test</artifactId>
+    <version>5.3.23</version> <!-- Asegúrate de usar la misma versión de Spring que estás usando en tu proyecto -->
+    <scope>test</scope>
+</dependency>
+<dependency>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-test</artifactId>
+    <version>2.7.6</version> <!-- O la versión de Spring Boot que estés usando -->
+    <scope>test</scope>
+</dependency>
+
+
+</dependencies>
+
+</project>
