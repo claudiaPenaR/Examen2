@@ -7,7 +7,7 @@ pipeline {
             steps {
                 script {
                     // Clonar el repositorio desde GitHub
-                    git url: 'https://github.com/claudiaPenaR/examen.git', branch: 'main'
+                    git url: 'https://github.com/claudiaPenaR/examen2.git', branch: 'master'
 
                     // También puedes agregar otras acciones de preparación si es necesario.
                 }
