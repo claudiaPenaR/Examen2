@@ -18,11 +18,8 @@ pipeline {
         stage('Construcción del Proyecto') {
             steps {
                 script {
-                    // Aquí puedes agregar los pasos necesarios para construir tu proyecto
-                    // Por ejemplo, para un proyecto Maven, usas 'mvn clean install'
-
                     // Ejecutar un comando Maven para construir el proyecto
-                    sh 'mvn clean install'
+                    bat 'mvn clean install'  // Utiliza bat para ejecutar el comando Maven en Windows
                 }
             }
         }
@@ -32,7 +29,7 @@ pipeline {
             steps {
                 script {
                     // Ejecutar las pruebas unitarias y generar resultados en un archivo XML
-                    sh 'mvn test' // Ejecutar las pruebas con Maven (puedes cambiar esto dependiendo de tu entorno)
+                    bat 'mvn test'  // Utiliza bat para ejecutar las pruebas en Windows
 
                     // Archivar los resultados de las pruebas en formato XML
                     junit '**/target/test-*.xml'  // Asegúrate de que el patrón coincida con el archivo de resultados de tus pruebas.
